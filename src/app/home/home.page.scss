@@ -1,0 +1,14 @@
+ion-item {
+    --ion-background-color: rgb(136, 221, 111) ;
+};
+
+@media (max-width: 700px) {
+    ion-content {
+        --ion-background-color: rgb(182, 237, 253);
+    };
+}
+
+@media (orientation: portrait){
+    .id {display: none}
+}
+

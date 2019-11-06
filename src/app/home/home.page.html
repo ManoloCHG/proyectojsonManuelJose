@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-input  type="number" [(ngModel)]="id" placeholder="Introduce id del meme"></ion-input>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ng-container *ngFor="let meme of memes | async">
+          <ion-card  *ngIf="id == meme.id" size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+            <ion-item>
+              <ion-thumbnail slot="start">
+              </ion-thumbnail>
+              <div class="ion-text-uppercase" >
+                  <h2>{{ meme.name }}</h2>
+              </div>
+            </ion-item>
+            <ion-card-content>
+              <ion-img [src]="meme.url" ></ion-img>
+                <p class="id">{{ meme.id }}</p>
+            </ion-card-content>
+            <p *ngIf="id != meme.id">La id no se corresponde con nuestra base de datos</p>
+          </ion-card>
+        </ng-container>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  
+

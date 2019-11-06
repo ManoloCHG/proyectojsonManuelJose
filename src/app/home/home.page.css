@@ -1,0 +1,13 @@
+ion-item {
+  --ion-background-color: #88dd6f;
+}
+@media (max-width: 700px) {
+  ion-content {
+    --ion-background-color: #b6edfd;
+  }
+}
+@media (orientation: portrait) {
+  .id {
+    display: none;
+  }
+}
