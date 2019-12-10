@@ -6,6 +6,11 @@ ion-item {
     --ion-background-color: #b6edfd;
   }
 }
+@media (min-width: 500px) {
+  ion-content {
+    --ion-background-color: #e41dda;
+  }
+}
 @media (orientation: portrait) {
   .id {
     display: none;

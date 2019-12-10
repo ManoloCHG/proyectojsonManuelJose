@@ -8,7 +8,15 @@ ion-item {
     };
 }
 
+@media (min-width: 500px) {
+    ion-content {
+        --ion-background-color: rgb(228, 29, 218);
+    };
+}
+
+
 @media (orientation: portrait){
     .id {display: none}
 }
+
 
