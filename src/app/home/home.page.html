@@ -9,8 +9,8 @@
     <ion-grid>
       <ion-row>
         <ng-container *ngFor="let meme of memes | async">
-          <ion-card  *ngIf="id == meme.id" size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
-            <ion-item>
+          <ion-card  *ngIf="id == meme.id" size-xs="12" size-sm="6" size-md="6" size-lg="4" size-xl="2">
+            <ion-item class="name">
               <ion-thumbnail slot="start">
               </ion-thumbnail>
               <div class="ion-text-uppercase" >

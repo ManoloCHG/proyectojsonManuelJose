@@ -16,3 +16,8 @@ ion-item {
     display: none;
   }
 }
+@media (orientation: landscape) {
+  .name {
+    display: none;
+  }
+}
